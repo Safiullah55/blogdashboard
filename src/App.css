@@ -1,0 +1,360 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.header.light {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(168, 168, 168);
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 30;
+  background-color: rgb(38, 38, 38);
+  height: 60px;
+  color: white;
+}
+.header .logo {
+  gap: 100px;
+  cursor: pointer;
+}
+.LogoImg {
+  height: 50px;
+}
+.icon {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.headIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.headIcon:hover {
+  background-color: rgb(191, 191, 191);
+  transition: all 0.3s ease-in-out;
+}
+.icon.light {
+  color: black;
+}
+/* .icon {
+  color: white;
+}
+.icon:hover {
+  color: blue;
+}
+.icon.light {
+  color: black;
+} */
+.icon.light:hover {
+  color: blue;
+}
+
+/*!SEARCH BAR */
+.input-group {
+  width: 20vw;
+  font-size: 14px;
+  border: none;
+}
+.input-group input {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.parent {
+  position: relative;
+}
+.parent .child {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+.child.active {
+  display: block;
+}
+.drop {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 120px;
+  border: 2px solid red;
+  background-color: white;
+  border-radius: 5px;
+}
+.drop li {
+  text-align: center;
+  font-size: 20px;
+  padding: 6px;
+  height: 40px;
+  color: gray;
+  text-decoration: none;
+  list-style: none;
+}
+.drop li:hover {
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+/*!Side navbar */
+.SideNav {
+  height: 100vh;
+  background-color: rgb(38, 38, 38);
+  width: 200px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+  transform: translateX(0px); /* Add initial translation to hide off-screen */
+  transition: transform 0.5s ease-in-out;
+}
+.nav-link {
+  width: 200px;
+}
+.SideNav.show {
+  transform: translateX(-250px); /* Translate back to 0 to show the menu */
+}
+
+.SideNav.light {
+  background-color: white;
+  color: black;
+  border-right: 1px solid rgb(168, 168, 168);
+}
+/*!UPDATE WEBSITE */
+.colorPicker {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 40px;
+  border: none;
+}
+.colorCoder {
+  display: flex;
+  align-items: center;
+  border-left: 2px solid rgb(187, 187, 187);
+  font-size: 15px;
+  height: 50px;
+}
+/*!BLOG */
+.Caption {
+  font-size: 12px;
+  color: grey;
+}
+/*!SHOW ALL BLOGS*/
+#edit {
+  font-size: 12px;
+}
+#delete {
+  font-size: 12px;
+}
+/*! Line Chart*/
+
+/*!DASHBOARD MAIN */
+.mainDashboard {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  top: 60px;
+  margin-bottom: 80px;
+  transition: all 0.5s ease-in-out;
+}
+.mainDashboard.fullScreen {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+@media screen and (max-width: 1190px) {
+  .SideNav {
+    height: 100vh;
+    background-color: rgb(38, 38, 38);
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainDashboard {
+    position: relative;
+    width: 75%;
+    margin-left: auto;
+    top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .SideNav {
+    height: 100vh;
+    background-color: rgb(38, 38, 38);
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+  .mainDashboard {
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    top: 80px;
+    margin-bottom: 80px;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+.menu li {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 0px;
+  justify-content: start;
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.heading {
+  font-size: 12px;
+  color: rgb(177, 177, 177);
+}
+.dashboard {
+  margin: 0px;
+  width: 100%;
+}
+.dashboard:hover {
+  cursor: pointer;
+}
+.layout:hover {
+  cursor: pointer;
+}
+.drop-layout {
+  background-color: rgb(73, 73, 73);
+  width: 180px;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.drop-layout li {
+  color: rgb(185, 185, 185);
+  margin: 5px 5px;
+}
+.drop-layout li:hover {
+  cursor: pointer;
+}
+.pages:hover {
+  cursor: pointer;
+}
+.drop-pages {
+  background-color: rgb(23, 23, 23);
+  width: 180px;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/*! DATA TABLE*/
+
+table tr img {
+  height: 70px;
+  width: 70px;
+}
+
+/*! UPDATE BLOG*/
+#updateImg {
+  height: 100px;
+  width: 100px;
+}
+/*! TOGGLE THE SHOW CLASS IN DROPDOWN */
+
+.myDropdown.show .drop-layout {
+  height: 70px;
+  padding: 5px 0px;
+}
+.charts {
+  margin: 0px;
+}
+.charts:hover {
+  cursor: pointer;
+}
+.tables:hover {
+  cursor: pointer;
+}
+
+/*!  Footer */
+.footer {
+  position: relative;
+  margin-left: auto;
+  width: 85.5%;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+.footer.fullScreen {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.footer p {
+  font-size: 14px;
+}
+.footer ul li {
+  font-size: 14px;
+}
+@media screen and (max-width: 1190px) {
+  .footer {
+    position: relative;
+    background-color: green;
+    margin-left: auto;
+    width: 75vw;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    position: relative;
+    margin-left: auto;
+    width: 70.5vw;
+    border: none;
+    background-color: red;
+  }
+}
+
+/*!Registration Form */
+.login {
+  height: 100vh;
+}
+.register {
+  height: 100vh;
+}
+.regForm {
+  width: 650px;
+}
+.logForm {
+  width: 450px;
+  margin-bottom: 20px;
+}
+.card-body .col {
+  font-size: 16px;
+}
+
+.card-body input {
+  font-size: 16px;
+}
+.card-body button {
+  font-size: 16px;
+}
+.card-footer {
+  font-size: 15px;
+}
